@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #612dea;
+  height: 60px;
+  font-size: 20px;
+  padding: 15px;
+}
+
+button {
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  background-color: #612dea;
+  color: white;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: blue;
+  transition: 0.3s;
+}
+
+#container {
+  margin-left: 25%;
+  margin-right: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 2fr 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  gap: 10px 10px;
+}
+
+.question {
+  text-align: center;
+  align-self: baseline;
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 5;
+  place-self: center;
+  font-size: 35px;
+}
+
+.finalScore {
+  grid-column: 1 / span 2;
+  grid-row: 6 / span 1;
+  font-size: 20px;
+}
+
+.userInitials {
+  grid-column: 1 / span 1;
+  grid-row: 7 / span 1;
+  font-size: 20px;
+}
+
+#userInitialsTextArea {
+  grid-column: 2 / span 1;
+  grid-row: 7 / span 1;
+  font-size: 20px;
+  resize: none;
+}
+
+.submit {
+  grid-column: 3 / span 1;
+  grid-row: 7 / span 1;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10%;
+  border: 0;
+  outline: 0;
+  background-color: #612dea;
+  color: white;
+}
+
+.submit:hover {
+    background-color: blue;
+    transition: 0.3s;
+  }
+
+.begin {
+  grid-column: 2 / span 2;
+  grid-row: 5 / span 1;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10%;
+  border: 0;
+  outline: 0;
+  background-color: #612dea;
+  place-self: center;
+  color: white;
+}
+
+.begin:hover {
+    background-color: blue;
+    transition: 0.3s;
+  }
+
+.answer {
+  margin-left: 25px;
+  padding: 10px;
+  border-radius: 10%;
+  border: 0;
+  outline: 0;
+  background-color: #612dea;
+  color: white;
+}
+
+.answer:hover {
+  background-color: blue;
+  transition: 0.3s;
+}
+
+.one {
+  grid-column: 1 / span 2;
+  grid-row: 6 / span 1;
+}
+
+.two {
+  grid-column: 1 / span 2;
+  grid-row: 7 / span 1;
+}
+
+.three {
+  grid-column: 1 / span 2;
+  grid-row: 8 / span 1;
+}
+
+.four {
+  grid-column: 1 / span 2;
+  grid-row: 9 / span 1;
+}
+
+.correctOrIncorrect {
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px 10px;
+}
+
+.CorI {
+    text-align: left;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+}
