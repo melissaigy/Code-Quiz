@@ -22,6 +22,7 @@ button {
   background-color: #612dea;
   color: white;
   padding: 5px;
+  box-shadow: 3px 4px 10px gray;
 }
 
 button:hover {
@@ -36,7 +37,6 @@ button:hover {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
 }
 
 #grid {
@@ -90,7 +90,7 @@ button:hover {
     transition: 0.3s;
   }
 
-.begin {
+#begin {
   grid-column: 2 / span 2;
   grid-row: 5 / span 1;
   padding: 10px 10px 10px 10px;
@@ -153,4 +153,8 @@ button:hover {
     text-align: left;
     grid-column: 1 / span 4;
     grid-row: 1 / span 2;
+}
+
+.hide {
+    display: none;
 }

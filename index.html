@@ -19,28 +19,28 @@
   </head>
   <body>
     <header>
-      <div>View High Score</div>
-      <div>Time:</div>
+      <div><button class="highScore">View High Score</button></div>
+      <div>Time: <span id="timeLeft">xxx</span></div>
     </header>
 
     <section id="container">
       <section id="grid">
-        <p class="question">Coding Quiz Challenge</p>
+        <p class="question">Ready for the Coding Quiz?</p>
         <p class="finalScore"></p>
         <p class="userInitials"></p>
-        <textarea id="userInitialsTextArea"></textarea>
-        <button class="begin">Begin Quiz</button>
-        <button class="answer one"></button>
-        <button class="answer two"></button>
-        <button class="answer three"></button>
-        <button class="answer four"></button>
-        <button class="submit"></button>
+        <textarea id="userInitialsTextArea" class="hide"></textarea>
+        <button id="begin">Begin Quiz</button>
+        <button class="answer one hide">one</button>
+        <button class="answer two hide">two</button>
+        <button class="answer three hide">three</button>
+        <button class="answer four hide">four</button>
+        <button class="submit hide">Submit</button>
       </section>
-      <section class="correctOrIncorrect">
+      <section class="correctOrIncorrect hide">
         <span class="CorI"></span>
       </section>
     </section>
 
-    <script src="script.js"></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
